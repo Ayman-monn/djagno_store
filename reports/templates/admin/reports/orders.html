@@ -21,10 +21,10 @@
             },
             series: [{
               name: 'sales',
-              data: weekly_stats.map(e == e.sum) 
+              data: weekly_stats.map(e => e.sum) 
             }],
             xaxis: {
-              categories: weekly_stats.map(e == '${e.year}/W${e.week}')
+              categories: weekly_stats.map(e => `${e.year}/W${e.week}`)
             }
           });
           
@@ -38,10 +38,10 @@
             },
             series: [{
               name: 'sales',
-              data: monthly_stats.map(e == e.sum)
+              data: monthly_stats.map(e => e.sum)
             }],
             xaxis: {
-              categories: monthly_stats.map(e =='${e.year}/${e.month}')
+              categories: monthly_stats.map(e =>`${e.year}/W${e.week}`)
             }
           });
           
@@ -55,10 +55,10 @@
             },
             series: [{
               name: 'sales',
-              data: yearly_stats.map(e == e.sum)
+              data: yearly_stats.map(e => e.sum)
             }],
             xaxis: {
-              categories: yearly_stats.map(e == e.year)
+              categories: yearly_stats.map(e => e.year)
             }
           });
           
