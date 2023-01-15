@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
 from pathlib import Path
-
+import os 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -37,6 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'paypal.standard.ipn',
+    'store',
+    'checkout',
+    'reports',
 ]
 
 MIDDLEWARE = [
@@ -54,7 +58,7 @@ ROOT_URLCONF = 'django_store.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -62,6 +66,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'store.custom_context_processor.store_website'
             ],
         },
     },
@@ -111,13 +116,37 @@ USE_I18N = True
 
 USE_TZ = True
 
+MEDIA_URL = '/media/' 
+MEDIA_ROOT = 'media/'
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = 'static/'
+STATICFILES_DIRS =[BASE_DIR / 'static']
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') 
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+EMAIL_HOST = 'smtp.mailtrap.io'
+EMAIL_HOST_USER = '0e415938867f5d'
+EMAIL_HOST_PASSWORD = 'c3372c6cc4f101'
+EMAIL_PORT = '587'
+
+SITE_URL = 'http://127.0.0.1:8000/'
+
+STRIPE_PUBLISHABLE_KEY = 'pk_test_51MLFqvCFibgoGNfAPrkCGGYAa0QSLtY8t3tNtqEK6gTOxImSf8u2C36Nc3nh7C74RT9T4TX2stp7rsNJxDY4RhqD00fg8M616b'
+STRIPE_SECRETE_KEY = 'sk_test_51MLFqvCFibgoGNfAhN5kNUWqsGhQI4HzaUkVuqHMTZWoSHu90TmOvQz2xtvCp8D1XaszJ6DIuNnCu6FMZxp07caq000Bidp0H9'
+STRIPE_ENDPOINT_SECRET = 'whsec_5ca5473fd38832afa8e4808a9e530648ae2aa13d089159629b182ab6e8665081'
+
+PAYPAL_TEST= True 
+PAYPAL_EMAIL = 'sb-g43cxr24563475@business.example.com'
+
+
+CURRENCY = 'USD'
+

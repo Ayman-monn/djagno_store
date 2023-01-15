@@ -1,0 +1,19 @@
+from .models import Category, Cart, Product 
+
+
+def store_website(request):
+    cart = Cart.objects.filter(session=request.session.session_key).last()
+    cart_total = 0 
+    cart_products= []
+    if cart: 
+        cart_products= Product.objects.filter(pk__in=cart.item)
+        for itm in cart_products: 
+            cart_total += itm.price
+
+
+    categories = Category.objects.order_by('order') 
+    return {
+        'categories': categories,
+        'cart_products': cart_products,
+        'cart_total': cart_total,
+    }
