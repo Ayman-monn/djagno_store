@@ -1,0 +1,176 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-01-16 16:04+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+#: .\store\templates\admin\store\order\change_form.html:9
+msgid "Customer"
+msgstr "الزبون"
+
+#: .\store\templates\admin\store\order\change_form.html:17
+msgid "email"
+msgstr "البريد الإلكتروني"
+
+#: .\store\templates\admin\store\order\change_form.html:25
+#: .\store\templates\checkout.html:67
+msgid "Payment Method"
+msgstr "طريقة الدفع"
+
+#: .\store\templates\admin\store\order\change_form.html:33
+msgid "Amount"
+msgstr "المبلغ"
+
+#: .\store\templates\admin\store\order\change_form.html:41
+#: .\store\templates\emails\order.html:89
+msgid "Date"
+msgstr "التاريخ"
+
+#: .\store\templates\admin\store\order\change_form.html:46
+msgid "Products"
+msgstr "المنتجات"
+
+#: .\store\templates\admin\store\order\change_form.html:50
+msgid "Name"
+msgstr "الاسم"
+
+#: .\store\templates\admin\store\order\change_form.html:51
+#: .\store\templates\cart.html:51 .\store\templates\cart.html:55
+msgid "Price"
+msgstr "السعر"
+
+#: .\store\templates\base.html:8 .\store\templates\emails\order.html:50
+#: .\store\templates\partials\header.html:4
+msgid "App Name"
+msgstr "متجر الكتب"
+
+#: .\store\templates\cart.html:38
+msgid "Your cart is empty"
+msgstr "السلة فارغة"
+
+#: .\store\templates\cart.html:62
+msgid "Procced to checkout"
+msgstr "اتمام الدفع"
+
+#: .\store\templates\category.html:17
+msgid "All"
+msgstr "الكل"
+
+#: .\store\templates\category.html:38
+msgid "We were not able to find any book"
+msgstr "لا نستطيع ايجاد الكتاب"
+
+#: .\store\templates\category.html:55 .\store\templates\category.html:65
+msgid "Previous"
+msgstr "السابق"
+
+#: .\store\templates\category.html:71 .\store\templates\category.html:75
+msgid "Next"
+msgstr "التالي"
+
+#: .\store\templates\checkout.html:11
+msgid "Amount to pay"
+msgstr "المبلغ للدفع"
+
+#: .\store\templates\checkout.html:17
+msgid "Your information"
+msgstr "معلوماتك"
+
+#: .\store\templates\checkout.html:26
+msgid "First Name"
+msgstr "الاسم الاول"
+
+#: .\store\templates\checkout.html:40
+msgid "Last Name"
+msgstr "الكنية"
+
+#: .\store\templates\checkout.html:54
+msgid "Email"
+msgstr "البريد الإلكتروني"
+
+#: .\store\templates\checkout.html:72
+msgid "Paypal"
+msgstr "بايبال"
+
+#: .\store\templates\checkout.html:80
+msgid "Credit Card"
+msgstr "البطاقة الإئتمانية"
+
+#: .\store\templates\checkout.html:92
+msgid "Pay Now"
+msgstr "إدفع الآن"
+
+#: .\store\templates\common\product_card.html:16
+#: .\store\templates\product.html:36
+msgid "Add To Cart"
+msgstr "إضافة إلي السلة"
+
+#: .\store\templates\common\product_card.html:19
+msgid "View"
+msgstr "عرض"
+
+#: .\store\templates\emails\order.html:60
+msgid " Customer"
+msgstr "الزبون"
+
+#: .\store\templates\emails\order.html:74
+msgid " Order"
+msgstr "طلب"
+
+#: .\store\templates\emails\order.html:130
+msgid " Book"
+msgstr "كتاب"
+
+#: .\store\templates\emails\order.html:141
+msgid " Price"
+msgstr "السعر"
+
+#: .\store\templates\emails\order.html:180
+msgid "Total"
+msgstr "المبلغ الكلي"
+
+#: .\store\templates\partials\footer.html:4
+msgid "© 2022 All rights reseerved"
+msgstr "© 2022 الحقوق محفوظة "
+
+#: .\store\templates\partials\header.html:24
+msgid "Cart"
+msgstr "السلة"
+
+#: .\store\templates\partials\header_search.html:9
+msgid "Search"
+msgstr "السلة"
+
+#: .\store\templates\partials\header_search.html:13
+msgid "All Categories"
+msgstr "كل التصنيفات"
+
+#: .\store\templates\product.html:62
+msgid "Description"
+msgstr "الوصف"
+
+#: .\store\templates\product.html:76
+msgid "Author"
+msgstr "المؤلف"
+
+#: .\store\views.py:74
+msgid "The product has been added to your cart"
+msgstr "تمت إضافة المنتج إلي السلة"
+
+#: .\store\views.py:91
+msgid "The product has been removed from your cart"
+msgstr "تمت إزالة المنتج من السلة"
